@@ -1,0 +1,28 @@
+{
+	"local": {
+		"cookie": {
+			"parser": "agilggsdo947wernLHR049uKp98CLksjO",
+			"key": "Erento-Dev-Token"
+		},
+		"mongodb": {
+			"url": "mongodb://localhost:27017/Erento",
+			"autoReconnect": true,
+			"autoRemove": "native",
+			"autoRemoveInterval": 10,
+			"seed": false
+		}
+	},
+	"test": {
+		"cookie": {
+			"parser": "agilggsdo947wernLHR049uKp98CLksjO",
+			"key": "Erento-Dev-Token"
+		},
+		"mongodb": {
+			"url": "mongodb://localhost:27017/Erento-test",
+			"autoReconnect": true,
+			"autoRemove": "native",
+			"autoRemoveInterval": 10,
+			"seed": true
+		}
+	}
+}

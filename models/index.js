@@ -1,0 +1,1 @@
+exports.Place = require('./place');
