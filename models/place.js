@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-//Currency
+//Place
 var PlaceSchema = new Schema({
 	loc: {
 		type: {
