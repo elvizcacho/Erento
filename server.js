@@ -1,6 +1,5 @@
 // Instantiate dependencies
 var express = require('express'),
-	fs = require('fs'),
 	logger = require('morgan'),
 	compression = require('compression'),
 	bodyParser = require('body-parser'),
@@ -12,7 +11,7 @@ var express = require('express'),
 	api = require('restize');
 
 
-var config = JSON.parse(fs.readFileSync('./config.json', 'utf-8'))[process.env.APP_ENV || 'local'];
+var config = require('./config.json')[process.env.APP_ENV || 'local'];
 
 mongoose.connect(config.mongodb.url);
 mongoose.connection.on('error', function(err) {

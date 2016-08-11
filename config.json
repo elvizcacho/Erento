@@ -22,7 +22,7 @@
 			"autoReconnect": true,
 			"autoRemove": "native",
 			"autoRemoveInterval": 10,
-			"seed": true
+			"seed": false
 		}
 	}
 }
