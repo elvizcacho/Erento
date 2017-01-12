@@ -1,0 +1,25 @@
+version: "2"
+services:
+  web:
+    build: .
+    ports:
+      - '8010:8010'
+    volumes:
+      - .:/home/app/app
+      - /home/app/app/node_modules
+    depends_on:
+      - redis
+      - mongo
+    links:
+      - redis
+      - mongo
+  mongo:
+    image: mongo
+    ports:
+      - '27017:27017'
+    volumes:
+      - /data/db
+  redis:
+    image: redis
+    ports:
+      - '6379:6379'

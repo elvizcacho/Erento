@@ -26,7 +26,7 @@ async.waterfall([
 		var count = 0;
 		async.whilst(
 			() => {
-				return count < 100000;
+				return count < 100;
 			}, (cb) => {
 
 				var longP = (long1 + Math.random() * (long2 - long1));

@@ -5,11 +5,11 @@
 			"key": "Erento-Dev-Token"
 		},
 		"mongodb": {
-			"url": "mongodb://localhost:27017/Erento",
+			"url": "mongodb://mongo:27017/Erento",
 			"autoReconnect": true,
 			"autoRemove": "native",
 			"autoRemoveInterval": 10,
-			"seed": false
+			"seed": true
 		}
 	},
 	"test": {
@@ -18,7 +18,7 @@
 			"key": "Erento-Dev-Token"
 		},
 		"mongodb": {
-			"url": "mongodb://localhost:27017/Erento-test",
+			"url": "mongodb://mongo:27017/Erento-test",
 			"autoReconnect": true,
 			"autoRemove": "native",
 			"autoRemoveInterval": 10,
